@@ -11,6 +11,8 @@
 		D23502F82D8137390089BF5F /* TC_CDC_HWApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23502F52D8137390089BF5F /* TC_CDC_HWApp.swift */; };
 		D23502F92D8137390089BF5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23502F12D8137390089BF5F /* Preview Assets.xcassets */; };
 		D23502FA2D8137390089BF5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23502F32D8137390089BF5F /* Assets.xcassets */; };
+		D25F5E562D8174B300A3DB37 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F5E552D8174B300A3DB37 /* NotificationsView.swift */; };
+		D25F5E582D827E8000A3DB37 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F5E572D827E8000A3DB37 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		D23502F32D8137390089BF5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D23502F42D8137390089BF5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D23502F52D8137390089BF5F /* TC_CDC_HWApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TC_CDC_HWApp.swift; sourceTree = "<group>"; };
+		D25F5E552D8174B300A3DB37 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		D25F5E572D827E8000A3DB37 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +66,19 @@
 				D23502F22D8137390089BF5F /* Preview Content */,
 				D23502F32D8137390089BF5F /* Assets.xcassets */,
 				D23502F42D8137390089BF5F /* ContentView.swift */,
+				D25F5E552D8174B300A3DB37 /* NotificationsView.swift */,
+				D25F5E592D827F5E00A3DB37 /* Constants */,
 				D23502F52D8137390089BF5F /* TC_CDC_HWApp.swift */,
 			);
 			path = TC_CDC_HW;
+			sourceTree = "<group>";
+		};
+		D25F5E592D827F5E00A3DB37 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D25F5E572D827E8000A3DB37 /* Color.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +156,8 @@
 			files = (
 				D23502F72D8137390089BF5F /* ContentView.swift in Sources */,
 				D23502F82D8137390089BF5F /* TC_CDC_HWApp.swift in Sources */,
+				D25F5E562D8174B300A3DB37 /* NotificationsView.swift in Sources */,
+				D25F5E582D827E8000A3DB37 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
