@@ -18,7 +18,7 @@ struct ContentView: View {
     private let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 ScrollView {
                     VStack(spacing: 0) {
@@ -26,15 +26,18 @@ struct ContentView: View {
                             Spacer(minLength: 24)
                             Image("avatar").clipShape(.circle)
                             Spacer().frame(maxWidth: .infinity)
-                            NavigationLink(destination: NotificationsView(isOnNotificationsView: $isOnNotificationsView,
-                                                                          notificationList: viewModel.notificationList?.messages ?? []),
-                                           isActive: $isOnNotificationsView) {
+                            Button {
+                                isOnNotificationsView = true
+                            } label: {
                                 if let messages = viewModel.notificationList?.messages, !messages.isEmpty {
                                     Image("iconBell02Active")
                                 } else {
                                     Image("iconBell01Nomal")
                                 }
-                            }.frame(width: 24, height: 24)
+                            }.navigationDestination(isPresented: $isOnNotificationsView, destination: {
+                                NotificationsView(isOnNotificationsView: $isOnNotificationsView,
+                                                  notificationList: viewModel.notificationList?.messages ?? [])
+                            }).frame(width: 24, height: 24)
                             Spacer(minLength: 24)
                         }.frame(height: 48)
                         HStack {
